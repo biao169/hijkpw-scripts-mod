@@ -10,42 +10,54 @@ hostip去除版是将官方脚本的 hijk.art/host.php 网址进行剔除并换�
 
 脚本修改尚有不足，请不要将此脚本用于开发环境，感谢提供修改意见的群友，谢谢！
 
+# 个人记录
+## 本脚本对应教程请访问：
+```
+https://blog.csdn.net/tjb132/article/details/130457956?spm=1001.2014.3001.5502
+```
+
+## 已成功安装：
+#### 【1】Xray一键脚本 hostip修改版
+```
+bash <(curl -sL https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/xray_mod1.sh)
+```
+
 ## V2ray
 
 【3】V2ray带伪装一键脚本CentOS版
 
 hostip修改版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/centos_install_v2ray2_mod1.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/centos_install_v2ray2_mod1.sh)
 ```
 
 hostip去除版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/centos_install_v2ray2_mod2.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/centos_install_v2ray2_mod2.sh)
 ```
 
 【4】V2ray带伪装一键脚本Ubuntu版
 
 hostip修改版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/ubuntu_install_v2ray2_mod1.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/ubuntu_install_v2ray2_mod1.sh)
 ```
 
 hostip去除版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/ubuntu_install_v2ray2_mod2.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/ubuntu_install_v2ray2_mod2.sh)
 ```
 
 【5】V2ray多合一脚本
 
 hostip修改版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/v2ray_mod1.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/v2ray_mod1.sh)
 ```
 
 hostip去除版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/v2ray_mod2.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/v2ray_mod2.sh)
 ```
 
 ## Xray
@@ -54,12 +66,12 @@ bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/ma
 
 hostip修改版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/xray_mod1.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/xray_mod1.sh)
 ```
 
 hostip去除版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/xray_mod2.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/xray_mod2.sh)
 ```
 
 ## Trojan
@@ -68,22 +80,22 @@ bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/ma
 
 hostip修改版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/trojan_mod1.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/trojan_mod1.sh)
 ```
 
 hostip去除版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/trojan_mod2.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/trojan_mod2.sh)
 ```
 
 【2】Trojan-Go一键脚本
 
 hostip修改版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/trojan-go_mod1.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/trojan-go_mod1.sh)
 ```
 
 hostip去除版
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/wixfreto/hijkpw-scripts-mod/main/trojan-go_mod2.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/biao169/hijkpw-scripts-mod/main/trojan-go_mod2.sh)
 ```
