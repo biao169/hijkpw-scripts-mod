@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # VPSKIT_SINGLE_FILE - MIT License - Copyright (c) 2026 VPSKit contributors
-# VPSKit 1.1.0 | Debian 12+, Ubuntu 18.04+, systemd, amd64/arm64, Bash 4.4+.
+# VPSKit 1.1.1 | Debian 12+, Ubuntu 18.04+, systemd, amd64/arm64, Bash 4.4+.
 # 单文件交付；运行配置/上游程序/证书在 /opt/vpskit；不创建系统账户。
 # 使用: sudo bash vpskit.sh ; 安装后: sudo vpskit
 # 上传为 biao169/hijkpw-scripts-mod/main/vpskit.sh 后:
@@ -17,7 +17,7 @@ set -Eeuo pipefail
 umask 077
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export LC_ALL=C
-VERSION='1.1.0'
+VERSION='1.1.1'
 XRAY_TESTED_VERSION='v26.3.27'
 ROOT='/opt/vpskit'
 ENTRY='/usr/local/bin/vpskit'
@@ -151,7 +151,9 @@ fetch() {
 check_root() { ((EUID == 0)) || die '需要root权限。请先 sudo -i，再执行一键命令；或 sudo bash ./vpskit.sh。'; }
 detect_system() {
     [[ -r /etc/os-release ]] || die '无法识别系统。'
-    local ID='' VERSION_ID=''
+    # os-release also assigns VERSION (e.g. "13 (trixie)"). Keep it local:
+    # the manager VERSION must survive system detection for self-persistence.
+    local ID='' VERSION_ID='' VERSION=''
     # OS-owned metadata, never source our JSON state or user input.
     . /etc/os-release
     case "$ID" in debian) (( ${VERSION_ID%%.*} >= 12 )) || die '需要Debian 12或更新版本。';; ubuntu) (( ${VERSION_ID%%.*} >= 18 )) || die '需要Ubuntu 18.04或更新版本。';; *) die "已检测到 $ID；本版本仅支持Debian/Ubuntu，未修改系统。";; esac
