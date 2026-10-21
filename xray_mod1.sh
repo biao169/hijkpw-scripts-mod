@@ -30,7 +30,7 @@ http://www.bequgexs.com/
 http://www.tjwl.com/
 )
 
-CONFIG_FILE="/usr/local/etc/xray/config.json"
+CONFIG_FILE="/etc/xray/config.json"
 OS=`hostnamectl | grep -i system | cut -d: -f2`
 
 V6_PROXY=""
@@ -856,7 +856,7 @@ User=root
 #CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 #AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 NoNewPrivileges=true
-ExecStart=/usr/local/bin/xray run -config /usr/local/etc/xray/config.json
+ExecStart=/usr/local/bin/xray run -config /etc/xray/config.json
 Restart=on-failure
 RestartPreventExitStatus=23
 
